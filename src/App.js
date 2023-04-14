@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home";
 import About from "./About";
 import Products from "./Products"; 
@@ -16,7 +17,12 @@ const App = () => {
   const theme={
     colors:{
       bg:'#fff'
-    }
+    },
+    media:{
+      mobile:"768px",
+      tab:"998px",
+
+    },
   };
   return (
     <>
